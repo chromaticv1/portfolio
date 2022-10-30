@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #23272a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #464646;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+::selection {
+  color: white;
+  background: #5865f2;
+}
+
+html{
+  scroll-behavior:smooth;
+  transition: color 2s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 40px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 18%;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 6px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: color 1s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.description {
+  color: #888;
+  font-weight: 300;
+  padding-bottom: 8px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #181818;
+  color: bisque;
+}
+
+.test {
+  display: flex;
+  flex-direction: row;
+}
+
+.container{
+  margin-left: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  margin: 40px 20px 0 50px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.container .heading{
+  width: 50%;
+  padding-bottom: 50px;
+}
+.container .heading h3{
+  font-size: 3em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #222;
+}
+
+.container .heading h3 span{
+  font-weight: 100;
+}
+
+.container h2 span{
+  font-weight: 200;
+}
+.container .box{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.container .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.container .box .dream img{
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+/* .container .btn{
+  align-items: center;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.container .btn a{
+ color: rgb(173, 173, 173);
+ background-color: #464646;
+ margin-top: 15%;
+ margin-bottom: 28%;
+ padding: 8px;
+ font-size: 1.5em;
+ text-decoration: none;
+ font-weight: bolder;
+ letter-spacing: 3px;
+ transition:all 0.5s;
+}
+
+.container .btn a:hover{
+ color: #fff;
+ background-color: transparent;
+ border-left: 5px solid #888;
+ border-right: 1px solid #888;
+ border-top: 1px solid #888;
+ border-bottom: 1px solid #888;
+
+} */
+
+nav{
+  float: none; 
+  clear: both;
+  width: 30%; 
+  margin: 15% auto;
+  background: #181818;
+}
+
+nav ul {
+  list-style: none;
+  margin: 20%;
+  padding: 0px;
+}
+
+nav li{
+	float: none; 
+  width: 100%;
+  font-size: larger;
+}
+
+nav li a{
+  display: block; 
+  margin: 20px;
+  width: 100%; 
+  padding: 20px; 
+  position: relative; 
+  z-index: 2;
+  text-decoration: none;
+  color: rgb(174, 174, 174);
+  border-left: 10px solid #464646;
+  box-sizing: border-box;  
+  -moz-box-sizing: border-box;  
+  -webkit-box-sizing: border-box; 
+}
+	
+nav li a:hover{ border-bottom: 0px; color: #fff;}
+
+nav li a:after { 
+  content: "";
+  height: 100%; 
+  left: 0; 
+  top: 0; 
+  width: 0px;  
+  background: #2b2b2b; 
+  position: absolute; 
+  transition: all 0.3s ease 0s; 
+  -webkit-transition: all 0.3s ease 0s; 
+  z-index: -1;
+}
+
+nav li a:hover:after{ width: 100%; }
+
+@media only screen and (max-width: 769px){
+    .container .box{
+   flex-direction: column;
+  }
+
+.container .box .dream{
+  width: 100%;
+}
+
+
+
+
+
+}
+
+/* #loader {
+  margin-top: 0;
+  background: #000 url("https://media.tenor.com/Zn0S_5ctOmUAAAAd/bulldozer-fail.gif") no-repeat center center;
+  z-index: 100;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+} */
+
+@media only screen and (max-width: 643px){
+.container .heading{
+  width: 100%;
+}
+.container .heading h3{
+  font-size: 1em;
+
+}
+
+
+
+
+
+
+
+}
